@@ -18,3 +18,11 @@
 .thumbnail.visible {
   opacity: 1;
 }
+
+body.light .thumbnail:hover {
+  background-color: rgba(0, 30, 84, .07);
+}
+
+body.dark .thumbnail:hover {
+  background-color: #565654;
+}
