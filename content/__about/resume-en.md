@@ -4,10 +4,10 @@ date: 2019-1-27 16:21:13
 lang: 'en'
 ---
 
-# Your name
+# gracieuxyh
 
 <div align="center">
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+서술할 것들이 좀 더 많아지는 날에 채울 예정.
 
 </div>
