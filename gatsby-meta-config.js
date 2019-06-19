@@ -1,5 +1,5 @@
 module.exports = {
-  title: `gracieuxyh's Devlog`,
+  title: `gracieuxyh.dev`,
   description: `Blog posted about ...`,
   author: `gracieuxyh`,
   introduction: `잡식성 프론트엔드 개발자, 무엇에 관심이 있다고 하기엔 실력이 형편없어서 좀 더 본인을 갈고 닦은 후 덧붙일 예정.`,
