@@ -1,7 +1,7 @@
 ---
 title: 운영체제의 구조
 date: 2019-06-21 18:06:53
-category: os
+category: Operating System
 ---
 
 ## 쉘(Shell)

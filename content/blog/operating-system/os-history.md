@@ -1,7 +1,7 @@
 ---
 title: 운영체제의 역사
 date: 2019-06-21 13:06:81
-category: os
+category: Operating System
 ---
 
 운영체제의 역사를 년도별로 간단하게 짚고 넘어간다.
