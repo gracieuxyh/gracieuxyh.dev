@@ -2,7 +2,7 @@ module.exports = {
   title: `gracieuxyh.dev`,
   description: `Blog posted about ...`,
   author: `gracieuxyh`,
-  introduction: `잡식성 프론트엔드 개발자, 무엇에 관심이 있다고 하기엔 실력이 형편없어서 좀 더 본인을 갈고 닦은 후 덧붙일 예정.`,
+  introduction: `잡식성 프론트엔드 개발자. Vue.js를 주로 다루며 React를 학습 중입니다.<br>데이터 시각화와 코드 최적화, 함수형 프로그래밍 등에 관심이 있습니다.`,
   siteUrl: `https://gracieuxyh.dev`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
