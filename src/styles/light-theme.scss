@@ -68,6 +68,14 @@ body.light {
   }
 
   // post
+  .post-date {
+    color: $light-post-date-font-color;
+  }
+
+  h1 {
+    border-bottom: none;
+  }
+
   .navigator {
     a {
       background-color: $navigator-background-color;

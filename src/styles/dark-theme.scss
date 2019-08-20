@@ -69,11 +69,24 @@ body.dark {
   }
 
   // post
+  .post-date {
+    color: $dark-post-date-font-color;
+  }
+
+  .post-container {
+    p {
+      color: $dark-post-text-font-color;
+    }
+  }
+
   blockquote {
     border-left: 4px solid rgba(255, 255, 255, 0.822);
   }
 
-  h1,
+  h1 {
+    border-bottom: none;
+  }
+
   h2 {
     border-bottom-color: rgba(255, 255, 255, 0.3);
   }
