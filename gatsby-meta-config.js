@@ -6,9 +6,9 @@ module.exports = {
   siteUrl: `https://gracieuxyh.dev`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: `https://github.com/gracieuxyh`, // Your GitHub account
+    github: `gracieuxyh`, // Your GitHub account
     medium: ``, // Your Medium account
-    facebook: `https://www.facebook.com/gracieuxyh`, // Your Facebook account
+    facebook: `gracieuxyh`, // Your Facebook account
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
