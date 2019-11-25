@@ -77,6 +77,10 @@ body.dark {
     p {
       color: $dark-post-text-font-color;
     }
+
+    img {
+      box-shadow: rgba(0, 0, 0, 0.55) 0 20px 68px !important;
+    }
   }
 
   blockquote {
