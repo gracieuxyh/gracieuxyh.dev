@@ -8,7 +8,7 @@ category: Operating System
 
 ## 컴퓨터 시스템 요소
 
-![computing-sytstem](./images/computing-system.png)
+![computing-sytstem](https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/os/computing-system.png)
 
 컴퓨터 시스템은 하드웨어, 운영체제, 응용 프로그램, 사용자로 나눌 수 있다.
 
@@ -34,10 +34,9 @@ category: Operating System
 
 ## 운영체제의 종류
 
-![os](./images/os.png)
+![os](https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/os/os.png)
 
-오늘날 운영체제는 무수히 많다. 
+오늘날 운영체제는 무수히 많다.
 
 대중적으로 많이 쓰이는 것은 데스크탑에서는 MS의 `Windows`, Apple의 `MacOS`이며 모바일에서는 Google의 `Android`, Apple의 `iOS`가 있다.
 그리고 `UNIX`와 `LINUX`도 앞서 언급한 것들 못지 않게 많이 쓰이고 있다. Android는 LINUX 기반의 운영체제이며 MacOS는 UNIX 기반의 운영체제이다. 그 외에도 많은 서버들이 LINUX와 UNIX 기반의 운영체제를 쓴다.
-
