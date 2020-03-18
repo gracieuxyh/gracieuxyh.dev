@@ -40,6 +40,7 @@ body.dark {
       }
 
       &[aria-selected='true'] {
+        // border: 2px solid #9775fa;
         border: 2px solid $dark-category-highlight-border-color;
         font-weight: bolder;
       }

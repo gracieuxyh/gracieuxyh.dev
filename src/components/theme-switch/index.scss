@@ -1,10 +1,112 @@
 .switch-container {
-  text-align: right;
+  position: fixed;
+  right: 15px;
+  top: 15px;
 
   .icon {
     text-align: center;
     color: #222;
     font-size: 14px;
     font-weight: 900;
+  }
+
+  .switch-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+
+  .day {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: #cbd5e0;
+    transform: scale(0.55);
+    box-shadow: none;
+    border-radius: 50%;
+    transition: all 0.45s ease 0s;
+    overflow: visible;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: -9px;
+      top: -9px;
+      height: 24px;
+      width: 24px;
+      transform: translate(14px, -14px);
+      opacity: 0;
+      border-radius: 50%;
+      transition: transform 0.45s ease 0s;
+    }
+
+    &:after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      box-shadow: 0 -23px 0 #cbd5e0, 0 23px 0 #cbd5e0, 23px 0 0 #cbd5e0, -23px 0 0 #cbd5e0, 15px 15px 0 #cbd5e0, -15px 15px 0 #cbd5e0, 15px -15px 0 #cbd5e0, -15px -15px 0 #cbd5e0;
+      transform: scale(1);
+      border-radius: 50%;
+      margin: -4px 0px 0px -4px;
+      transition: all 0.35s ease 0s;
+    }
+  }
+
+  .night {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    transform: scale(1);
+    box-shadow: inset 8px -8px 0px 0px #2d3748;
+    border-radius: 50%;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    transition: all 0.45s ease 0s;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: -9px;
+      top: -9px;
+      height: 24px;
+      width: 24px;
+      transform: translate(0px, 0px);
+      opacity: 1;
+      border-width: initial;
+      border-style: none;
+      border-color: initial;
+      border-image: initial;
+      border-radius: 50%;
+      transition: transform 0.45s ease 0s;
+    }
+
+    &:after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      box-shadow: 0 -23px 0 #2d3748, 0 23px 0 #2d3748, 23px 0 0 #2d3748, -23px 0 0 #2d3748, 15px 15px 0 #2d3748, -15px 15px 0 #2d3748, 15px -15px 0 #2d3748, -15px -15px 0 #2d3748;
+      transform: scale(0);
+      border-radius: 50%;
+      margin: -4px 0px 0px -4px;
+      transition: all 0.35s ease 0s;
+    }
   }
 }

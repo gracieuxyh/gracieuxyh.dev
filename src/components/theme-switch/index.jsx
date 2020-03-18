@@ -36,15 +36,24 @@ export const ThemeSwitch = () => {
   }
 
   useEffect(() => {
-    const checked = !Dom.hasClassOfBody(THEME.LIGHT)
-
+    const checked = Dom.hasClassOfBody(THEME.DARK)
     handleChange(checked)
   }, [])
 
   return (
     <div className="switch-container">
       <label htmlFor="normal-switch">
-        <Switch
+        <button
+          className="switch-button"
+          onClick={() => handleChange(!checked)}
+        >
+          {checked ? (
+            <div className="day"></div>
+          ) : (
+            <div className="night"></div>
+          )}
+        </button>
+        {/* <Switch
           onChange={handleChange}
           checked={checked}
           id="normal-switch"
@@ -56,7 +65,7 @@ export const ThemeSwitch = () => {
           offHandleColor={'#fff'}
           onColor={'#999'}
           onHandleColor={'#282c35'}
-        />
+        /> */}
       </label>
     </div>
   )

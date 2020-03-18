@@ -3,8 +3,7 @@ import { graphql } from 'gatsby'
 import _ from 'lodash'
 
 import { Layout } from '../layout'
-import { Bio } from '../components/bio'
-import { Head } from '../components/head'
+import { Header } from '../components/header'
 import { Category } from '../components/category'
 import { Contents } from '../components/contents'
 
@@ -16,7 +15,7 @@ import * as Dom from '../utils/dom'
 
 import { HOME_TITLE, CATEGORY_TYPE } from '../constants'
 
-const DEST_POS = 316
+const DEST_POS = 20
 const BASE_LINE = 80
 
 function getDistance(currentPos) {
@@ -34,6 +33,7 @@ export default ({ data, location }) => {
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
   const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
+  const rootPath = `${__PATH_PREFIX__}/`
 
   useEffect(() => {
     window.addEventListener(`scroll`, onScroll, { passive: false })
@@ -73,13 +73,12 @@ export default ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteMetadata.title}>
-      <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
-      <Bio />
       <Category
         categories={categories}
         category={category}
         selectCategory={selectCategory}
       />
+      <Header location={location} rootPath={rootPath} />
       <Contents
         posts={posts}
         countOfInitialPost={countOfInitialPost}

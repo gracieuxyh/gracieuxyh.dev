@@ -1,0 +1,28 @@
+body {
+  font-family: "Source Sans Pro", "APPLE SD Gothic Neo", HelveticaNeue, Helvetica, "NanumGothic", "맑은 고딕", "Malgun Gothic", arial, sans-serif, "Source Sans Pro"
+}
+
+h1 {
+  font-size: 42px;
+  margin: 2.4rem 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 32px;
+  padding-bottom: 0.8rem;
+}
+
+.utterances {
+  max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}

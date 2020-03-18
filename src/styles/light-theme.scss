@@ -29,6 +29,7 @@ body.light {
     background-color: $light-category-background-color;
 
     .item {
+      color: #252525;
       border: 1px solid $light-category-border-color;
       background-color: $light-category-item-color;
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
@@ -39,6 +40,7 @@ body.light {
       }
 
       &[aria-selected='true'] {
+        // border: 2px solid #845ef7;
         border: 2px solid $light-category-highlight-border-color;
         font-weight: bolder;
       }

@@ -1,11 +1,18 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-export const Item = ({ title, category, selectCategory }) => (
+export const Item = ({ title, category, selectCategory, link }) => (
   <li
     className="item"
     role="tab"
     aria-selected={category === title ? 'true' : 'false'}
   >
-    <div onClick={() => selectCategory(title)}>{title}</div>
+    {selectCategory ? (
+      <div onClick={() => selectCategory(title)}>{title}</div>
+    ) : (
+      <Link to={link} style={{ color: 'inherit' }}>
+        <div>{title}</div>
+      </Link>
+    )}
   </li>
 )
