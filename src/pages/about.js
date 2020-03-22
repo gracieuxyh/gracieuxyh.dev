@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import { rhythm } from '../utils/typography'
 import * as Lang from '../constants'
+import '../styles/about.scss'
 
 export default ({ data }) => {
   const resumes = data.allMarkdownRemark.edges
@@ -16,7 +17,7 @@ export default ({ data }) => {
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
+        maxWidth: rhythm(35),
         padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
           3 / 4
         )}`,

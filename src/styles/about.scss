@@ -1,0 +1,37 @@
+.about-cotnainer {
+  width: 900px;
+}
+
+.tech-stack {
+  .logo-wrapper {
+    position: relative;
+    display: inline-block;
+
+    img {
+      margin-bottom: 0;
+    }
+
+    &:hover .overlay {
+      display: flex;
+    }
+
+    &:hover img {
+      opacity: 0.4;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -1px;
+      line-height: 1rem;
+    }
+  }
+}
