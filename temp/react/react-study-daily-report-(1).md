@@ -1,10 +1,10 @@
 ---
-title: React 학습일지 (1)
+title: React 학습일지 (1) - Intro
 date: 2019-08-19 09:08:33
 category: React
 ---
 
-![react-study-daily-report](./images/react-study-daily-report.png)
+![react-study-daily-report](https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/react/react-study-daily-report.png)
 
 본 게시글은 React를 공부하며 배우고 익히고 느낀 것을 기록한 일지📖입니다.
 
@@ -33,18 +33,18 @@ category: React
 JQuery를 통해 코드의 길이를 줄이고 보다 빠른 개발을 할 수 있게 되었지만 이는 근본적인 해결책이 아니었다. 웹의 크기가 크고 사용자와의 인터랙션이 많아질수록 이벤트가 참조하는 DOM 또한 많아지고
 얽히고 섥혀서 아래처럼 복잡한 형태를 띄어 유지보수를 어렵게 만든다.
 
-![complex-dom-manipulate](./images/complex-dom-manipulate.png)
+![complex-dom-manipulate](https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/react/complex-dom-manipulate.png)
 
 개발자들은 좀 더 효율적인 방식을 원했고 그래서 Backbone, Ember, AngularJS가 등장한다.
- 
-![back_em_ng](./images/back_em_ng.png)
 
-이들의 엔진의 자세한 작동 방식은 다 다르지만 __데이터가 변경될 경우 특정 DOM의 속성도 자연스럽게 변형시켜준다__. 유저가 직접 DOM에 접근하는 일은 거의 드물게 되었다. 이 방식은 코드를 매우 많이 줄여 개발에 대한 리소스를 아낄 수 있게 해줬다.
+![back_em_ng](https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/react/back_em_ng.png)
+
+이들의 엔진의 자세한 작동 방식은 다 다르지만 **데이터가 변경될 경우 특정 DOM의 속성도 자연스럽게 변형시켜준다**. 유저가 직접 DOM에 접근하는 일은 거의 드물게 되었다. 이 방식은 코드를 매우 많이 줄여 개발에 대한 리소스를 아낄 수 있게 해줬다.
 
 ### 그렇다면 React는?
 
 React 개발팀은 이와 달리 생각하여 DOM 속성의 변화가 필요한 경우 DOM을 다 날리고 새로 만드는 방법을 채택했다. 이는 UI를 어떤 방식으로 업데이트해야할까?라는 고민에서 벗어나서 React가
-단순히 __UI를 보여주는 것__에 집중하게 해줬다.
+단순히 **UI를 보여주는 것**에 집중하게 해줬다.
 
 혹시 DOM을 새로 그리는 게 속도는 느리지 않을까?라는 생각이 들 수도 있지만 이는 Virtual DOM을 통해서 해결한다. 자세한 것은 후술한다.
 
@@ -56,6 +56,7 @@ React 개발팀은 이와 달리 생각하여 DOM 속성의 변화가 필요한 
 
 HTML과 형태가 매우 유사하여 어렵지 않게 작성이 가능하며 마크업과 로직을 분리하지 않고 UI를 만들 수 있다. 또한 React 컴파일 과정에서 에러를 감지할 수 있어서 유지보수에 도움이 된다.
 
+JSX의 규칙과 활용 방법은 [다음 포스트](<https://gracieuxyh.dev/react/react-study-daily-report-(2)/>)에서 확인할 수 있다.
 
 #### 2. Virtual DOM
 
@@ -65,6 +66,7 @@ Virtual DOM은 말 그대로 가상의 DOM이다. 실제로 존재하는 DOM이 
 
 그렇기 때문에 정말 필요한 DOM의 변화만을 반영하여 React가 UI Library로서의 기능에만 초점을 맞출 수 있다.
 
+Virtual DOM에 대해서 이해하기 쉽도록 설명한 [유튜브 영상](https://www.youtube.com/watch?v=BYbgopx44vo)을 첨부했으니 이해가 어렵다면 이 영상을 참고하도록 한다.
 
 #### 3. Component
 
@@ -72,11 +74,9 @@ Virtual DOM은 말 그대로 가상의 DOM이다. 실제로 존재하는 DOM이 
 
 컴포넌트는 쉽게 표현하여 작은 UI의 일부, 조각이라고 생각할 수 있다. 컴포넌트 단위로 코드를 작성하면 확장성, 재사용성, 테스트 가용성 등이 크게 증가한다.
 
-
 #### 4. One Way Data Flow
 
-React는 상위 컴포넌트에서 하위 컴포넌트로의 단방향 데이터 흐름만을 제공한다. 양방향 바인딩은 개발 비용이 적다고 느낄 수 있지만 장기적 관점에서 데이터의 흐름을 이해하기 어려워 개발 비용이 증가하게 된다.
-
+React는 상위 컴포넌트에서 하위 컴포넌트로의 **단방향 데이터 흐름**만을 제공한다. 양방향 바인딩은 개발 비용이 적다고 느낄 수 있지만 장기적 관점에서 데이터의 흐름을 이해하기 어려워 개발 비용이 증가하게 된다.
 
 ## React 프로젝트 설치 및 실행
 
@@ -84,18 +84,18 @@ React는 상위 컴포넌트에서 하위 컴포넌트로의 단방향 데이터
 
 우선 위의 명령어를 통해 프로젝트 설치했다. 그 후 프로젝트를 실행했으나..
 
-![error](./images/error.png)
+![error](https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/react/error.png)
 
 상큼하게 시작부터 `TypeError: fsevents is not a constructor`라는 에러를 맞이한다. 해당 에러를 구글링했다.
 
-![error-googling](./images/error-googling.png)
+![error-googling](https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/react/error-googling.png)
 
 맨 위에 해당 에러에 대한 [github issue](https://github.com/paulmillr/chokidar/issues/827)가 열려있다.
 
-![error-cause](./images/error-cause.png)
+![error-cause](https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/react/error-cause.png)
 
 chokidar 모듈은 구버전의 fsevents를 사용하는데 node 12의 npm(6.9.0)에서는 해당 버전이 아닌 최신 버전을 설치해서 문제가 생겼다고 한다.
-이어서 스크롤을 내려보면 npm이나 node 버전을 다운그레이드 하고 싶지않다라는 코멘트가 몇 개 이어진다. 
+이어서 스크롤을 내려보면 npm이나 node 버전을 다운그레이드 하고 싶지않다라는 코멘트가 몇 개 이어진다.
 
 npm이나 node의 버전을 낮출 필요가 있을까? 문제되는 것은 fsevents의 버전이다. 그래서 fsevents의 버전만 다운그레이드하면 된다.
 
