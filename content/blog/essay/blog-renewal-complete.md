@@ -1,7 +1,7 @@
 ---
 title: 블로그 리뉴얼 완료
 date: 2019-06-20 02:06:01
-category: chitchat
+category: Essay
 ---
 
 블로그 리뉴얼을 완료했다.

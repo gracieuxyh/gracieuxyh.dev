@@ -1,7 +1,7 @@
 ---
 title: 2여년 간의 BCSD Lab 생활 회고
 date: 2020-03-18 22:03:94
-category: chitchat
+category: Essay
 ---
 
 시간은 참 총알같다.
