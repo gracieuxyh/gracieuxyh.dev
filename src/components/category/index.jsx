@@ -5,6 +5,8 @@ import { rhythm } from '../../utils/typography'
 import './index.scss'
 
 export const Category = ({ categories, category, selectCategory }) => {
+  console.log(category)
+  console.log(categories)
   return (
     <ul
       className="category-container"
