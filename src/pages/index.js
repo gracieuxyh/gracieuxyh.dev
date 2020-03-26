@@ -13,7 +13,7 @@ import * as IOManager from '../utils/visible'
 import * as EventManager from '../utils/event-manager'
 import * as Dom from '../utils/dom'
 
-import { HOME_TITLE, CATEGORY_TYPE } from '../constants'
+import { CATEGORY_TYPE } from '../constants'
 
 const DEST_POS = 20
 const BASE_LINE = 80
@@ -28,13 +28,12 @@ export default ({ data, location }) => {
   const [count, setCount] = useState(initialCount)
   const countRef = useRef(count)
   const [category, setCategory] = useState(initialCategory)
-
   const { siteMetadata } = data.site
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
   const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
   const rootPath = `${__PATH_PREFIX__}/`
-
+  console.log(initialCategory, category)
   useEffect(() => {
     window.addEventListener(`scroll`, onScroll, { passive: false })
     IOManager.init()
@@ -55,6 +54,7 @@ export default ({ data, location }) => {
   })
 
   const selectCategory = category => {
+    console.log(category)
     setCategory(category)
     ScrollManager.go(DEST_POS)
   }
