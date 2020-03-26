@@ -33,7 +33,7 @@ export default ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
   const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
   const rootPath = `${__PATH_PREFIX__}/`
-  console.log(initialCategory, category)
+
   useEffect(() => {
     window.addEventListener(`scroll`, onScroll, { passive: false })
     IOManager.init()
@@ -54,7 +54,6 @@ export default ({ data, location }) => {
   })
 
   const selectCategory = category => {
-    console.log(category)
     setCategory(category)
     ScrollManager.go(DEST_POS)
   }
