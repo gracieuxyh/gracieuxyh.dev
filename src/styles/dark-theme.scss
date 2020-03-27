@@ -39,15 +39,6 @@ body.dark {
         color: $dark-category-text-color;
       }
 
-      &.selected {
-        border: 2px solid $dark-category-highlight-border-color;
-        font-weight: bolder;
-      }
-
-      &.selected a {
-        color: $dark-category-highlight-text-color;
-      }
-
       &[aria-selected='true'] {
         border: 2px solid $dark-category-highlight-border-color;
         font-weight: bolder;

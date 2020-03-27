@@ -39,15 +39,6 @@ body.light {
         color: $light-category-text-color;
       }
 
-      &.selected {
-        border: 2px solid $light-category-highlight-border-color;
-        font-weight: bolder;
-      }
-
-      &.selected a {
-        color: $light-category-highlight-text-color;
-      }
-
       &[aria-selected='true'] {
         border: 2px solid $light-category-highlight-border-color;
         font-weight: bolder;
