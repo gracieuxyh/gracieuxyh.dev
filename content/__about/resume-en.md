@@ -27,7 +27,7 @@ lang: 'en'
 ### Exprience
 
 - BCSD Lab 웹 프론트엔드 엔지니어, 2018.01 ~ 현재까지
-  - **[2여년 간의 동아리 생활 회고](/chitchat/bcsd-life-retrospect)**
+  - **[2여년 간의 동아리 생활 회고](/essay/bcsd-life-retrospect)**
   - 한국기술교육대학교 커뮤니티 **<a href="https://koreatech.in" target="_blank">코인</a>** 개발
   - 코인 어드민 개발
   - **<a href="https://bcsdlab.com" target="_blank">BCSD Lab</a>** 홈페이지 개발
