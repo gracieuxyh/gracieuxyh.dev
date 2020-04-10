@@ -45,8 +45,16 @@ lang: 'en'
     <div class="overlay">CSS3</div>
   </div>
   <div class="logo-wrapper">
-    <img src="https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/logo/js.png" alt="js" />
-    <div class="overlay">JavaScript</div>
+    <img src="https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/logo/js.png" alt="javascript" />
+    <div class="overlay">Javascript</div>
+  </div>
+  <div class="logo-wrapper">
+    <img src="https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/logo/typescript.png" alt="typescript" />
+    <div class="overlay">Typescript</div>
+  </div>
+  <div class="logo-wrapper">
+    <img src="https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/logo/nodejs.png" alt="nodejs" />
+    <div class="overlay">Node.js</div>
   </div>
   <div class="logo-wrapper">
     <img src="https://s3.ap-northeast-2.amazonaws.com/static.gracieuxyh.dev/logo/react.png" alt="react" />
